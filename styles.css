@@ -324,6 +324,36 @@ body {
   color: #555;
 }
 
+/* Vinyl Covers */
+.vinyl-covers {
+  display: flex;
+  gap: 30px;
+  margin: 40px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vinyl-cover {
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+}
+
+.vinyl-cover img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.vinyl-cover figcaption {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
 /* Logo and Links */
 .logo-inline {
   height: 60px;
@@ -428,5 +458,16 @@ a:hover {
   .single-artwork img,
   .ep-artwork img {
     max-width: 400px;
+  }
+
+  .vinyl-covers {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .vinyl-cover {
+    min-width: auto;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
